@@ -32,23 +32,21 @@
     "twig/twig": "^1.6 || ^2.0 || ^3.0 || ^4.0 || ^5.0",
     "symfony/yaml": "^2.3 || ^3.0 || ^4.0 || ^5.0"
   },
-  "replace": {
-    "Framework/Foundation": "self.version"
-  },
   "autoload": {
     "files": [
-      "src/oxycore/Framework/helpers.php",
-      "src/oxycore/Foundation/helpers.php",
-      "src/oxycore/Support/helpers.php"
+        "src/Oxylion/Framework/helpers.php",
+        "src/Oxylion/Foundation/helpers.php",
+        "src/Oxylion/Support/helpers.php"
     ],
     "psr-4": {
-      "Oxycore\\": "src/oxycore/"
+        "Oxylion\\": "src/Oxylion/",
+        "Oxylion\\Framework\\": "src/Oxylion/Framework/"
     }
   },
   "autoload-dev": {
-    "psr-4": {
-      "Oxycore\\Tests\\": "tests/"
-    }
+      "psr-4": {
+          "Oxylion\\Tests\\": "tests/"
+      }
   },
   "suggest": {
     "ext-ftp": "Required to use the Flysystem FTP driver.",

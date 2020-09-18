@@ -1,0 +1,24 @@
+{
+    "name": "oxycore/framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "duwles",
+            "email": "duwless@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oxycore\\Framework\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.9.x-dev"
+        }
+
+    }
+}
