@@ -1,6 +1,8 @@
 {
   "name": "oxycore/framework",
   "description": "The Oxycore Framework",
+  "type": "library",
+  "license": "MIT",
   "keywords": ["framework", "oxycore", "oxylion"],
   "homepage": "https://github.com/Oxycore/Framework",
   "support": {
@@ -9,7 +11,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "1.x-dev"
+      "dev-master": "1.9.x-dev"
     }
   },
   "require": {
@@ -21,27 +23,26 @@
     "ext-xml": "*",
     "ext-yaml": "*",
     "psr/container": "^1.0",
-    "symfony/yaml": "^3.0||^4.0||^5.0",
     "vlucas/phpdotenv": "^5.2"
   },
   "require-dev": {
-    "aws/aws-sdk-php": "^3.0",
     "filp/whoops": "^2.4",
     "mockery/mockery": "^1.3.1",
     "phpunit/phpunit": "^8.4|^9.0",
-    "predis/predis": "^1.1.1"
+    "twig/twig": "^1.6 || ^2.0 || ^3.0 || ^4.0 || ^5.0",
+    "symfony/yaml": "^2.3 || ^3.0 || ^4.0 || ^5.0"
   },
   "replace": {
     "Framework/Foundation": "self.version"
   },
   "autoload": {
     "files": [
-      "src/oxycore/framework/Core/helpers.php",
-      "src/oxycore/framework/Foundation/helpers.php",
-      "src/oxycore/framework/Support/helpers.php"
+      "src/oxycore/Framework/helpers.php",
+      "src/oxycore/Foundation/helpers.php",
+      "src/oxycore/Support/helpers.php"
     ],
     "psr-4": {
-      "Oxycore\\Framework\\": "src/oxycore/framework/"
+      "Oxycore\\": "src/oxycore/"
     }
   },
   "autoload-dev": {

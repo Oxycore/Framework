@@ -1,0 +1,16 @@
+# Windows System elements
+.DS_Store
+Thumbs.db
+
+# Private IDE Setting dirs
+/.idea/
+/.vscode/
+
+# composer elements
+composer.lock
+composer.phar
+/vendor/
+
+# phpunit config and result output
+.phpunit.result.cache
+phpunit.xml
